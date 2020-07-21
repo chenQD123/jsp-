@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--c3p0配置文件-->
+<c3p0-config>
+    <default-config>
+        <!--如果要研究某个xml中可以设置那些属性，找相关类的属性或者方法-->
+        <property name="user">csy</property>
+        <property name="password">123456789</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/mysql_shiyan1</property>
+        <property name="checkoutTimeout">30000</property>
+
+    </default-config>
+             <!--自己设置的优先级高，会先用自己写的-->
+    <named-config name= "csy">
+        <property name="user">csy</property>
+        <property name="password">123456789</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/mysql_shiyan1</property>
+        <property name="checkoutTimeout">20000</property>
+    </named-config>
+</c3p0-config>

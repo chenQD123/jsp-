@@ -1,0 +1,57 @@
+body{
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background:white;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+}
+#center{
+    height:100%;
+    magin:0 auto;
+}
+#left{
+    margin: 0px;
+    padding: 0px;
+    width:70%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+#up{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height:60%;
+    position: relative;
+}
+#animate1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 200px;
+}
+#down{
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    height:40%;
+    background-image: url(../images/1.jpg);/*设置背景图片*/
+    background-repeat: no-repeat;/*背景图片默认重复*/
+    background-size:100% 100%;/*宽和高设置为100%,还有cover自动比例拉伸，auto 100%等比例拉伸*/
+    position: relative;
+}
+
+#right{
+    width:30%;
+    height:100%;
+    background:floralwhite;
+    float: left;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+

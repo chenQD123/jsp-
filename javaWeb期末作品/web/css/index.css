@@ -1,0 +1,148 @@
+body{
+    background:  #f6f6f6;
+}
+
+.logo-search{
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    padding:0px 50px 0px 50px;
+
+}
+.logo{
+    width: 300px;
+    height: 80%;
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    float: left;
+
+}
+.search input{
+    width: 400px;
+    height: 38%;
+    background-color: white;
+    float: right;
+    margin:40px 60px 0 0;
+}
+/*导航栏*/
+.navigation{
+    height: 30px;
+    background-color:darkseagreen ;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    overflow:hidden;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    padding: 5px 20px 5px 10px;/*设置超链接的padding，可以隔开超链接的距离，而不是设置margin*/
+    text-align: center;
+    text-decoration: none;/*文本修饰，超链接就没有了下面的一横*/
+}
+li a:hover {
+    background-color: black;
+}
+/*下拉菜单*/
+.dropdown-content{
+    font-color: black;
+    position: absolute;
+    display: none;
+    min-width: 100px;
+    position: absolute;
+    background-color: darkseagreen;/*鼠标*/
+}
+li:hover .dropdown-content{/*hover就是鼠标移动到li时，drop-content会显示块*/
+    display: block;
+
+}
+.dropdown-content a{/*设置超链接中的字，直接是color：*/
+    color: black;
+}
+/*鼠标移到下拉菜单显示的颜色*/
+.dropdown-content a:hover {
+    background: white;
+}
+/*登录，注册*/
+.login-register{
+    float: right;
+}
+.main{
+    width: 1100px;
+    background-color:#f6f6f6 ;
+    overflow:hidden;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+.col{
+    width: 150px;
+    height: auto;/*让父类自适应子类的高度*/
+    background: white ;
+    float: left;
+    border: gainsboro solid 1px;
+    margin-right: 1%;
+    margin-left: 30px;
+}
+.col div{
+    height: 40px;
+    line-height:40px;/*把文字在div中垂直居中，设为等于高*/
+    padding-left: 20px;
+    border-bottom: 3px gainsboro solid;
+
+}
+.right{
+    width: 900px;
+    overflow:hidden;
+    background: white;
+    float:right;
+    padding: 0;
+}
+h1{
+    margin: 0;
+}
+.row1 {
+    width: 90%;
+    background: #f6f6f6;
+    margin: 10px auto;
+    padding: 10px 20px 10px 20px;
+    overflow:hidden;/*内容会被修剪，并且其余内容是不可见的。不设置高度，就可以实现自适应子类高度*/
+
+}
+.row1 .study{
+    font-color: black;
+    width: 30%;
+    background: gainsboro;
+    height: 100px;
+    margin: 10px;
+    text-align: left;
+    display: inline-block;/*将内联元素转换为块级元素,不然内联元素无法设置性质！！！！！*/
+    text-decoration: none;/*文本修饰，超链接就没有了下面的一横*/
+}
+.study h2{
+    margin: 0;
+}
+.study img{
+    width: 25px;
+    height: 25px;
+    padding:10px 10px 0 10px;
+}
+.favorite{
+    width: 95%;
+    background-color: #f6f6f6;
+    margin: 10px auto 20px;
+    padding: 0px;
+    overflow:hidden;
+}
+.favorite .row1 td{
+    border-right:solid 2px grey;
+}
+.likeRow td{
+    height: 40px;
+}
+
+.hint{
+    margin:0 auto;
+}
